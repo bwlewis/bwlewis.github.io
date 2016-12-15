@@ -1074,34 +1074,19 @@ Send electronic mail to me at:
 <div style="clear: both;"></div>
 
 <ul>
-<li> I updated the <a href="https://cran.r-project.org/package=irlba">irlba</a> package for R (new version is 2.1.2). The new version includes a convenience 'prcomp'-like function for principal components, and a significant performance boost for most problems. I've got a web page about the method that includes referenes to vignettes and applications here: <a href="https://bwlewis.github.io/irlba/">https://bwlewis.github.io/irlba/</a>, and a comparison with the cool RSpectra package for R here: <a href="https://bwlewis.github.io/irlba/comparison.html">https://bwlewis.github.io/irlba/comparison.html</a>. Jim Baglama informs me that the Mathworks has finally adopted the irlba method for use in MATLAB's truncated SVD sovler, 'svds'. All I can say is, welcome to the present. (R has had this available in stable form for over 5 years,  I guess it’s hard for proprietary software companies to keep up with the times–they have to spend so much effort on marketing after all.)
+<li> See you at <a href="https://www.rstudio.com/conference/">rstudio::conf</a> in Orlando in January!
+<li> After recently upgrading my cheap laptop to Ubuntu 16.04 I discovered that my old network manager scheme for randomizing hardware MAC address broke. I saw that the latest build of network manager introduced a new scheme for doing this, but was unable to get that to work in Ubuntu (see for instance this thread <a href="https://bbs.archlinux.org/viewtopic.php?id=213855">https://bbs.archlinux.org/viewtopic.php?id=213855</a>). Frustrated with making such a simple thing so difficult, I stripped out all that junk from my operating system and now use this trivial script to manually manage my wifi network interface: <a href="wifi">wifi</a>. The script doesn't cover all connection cases, but less common connections can usually be manually configured without much problem.
 <li> Friends and I are working on some new methods for fast and efficient thresholded correlation, suitable for very large-scale problems: <a href="http://arxiv.org/abs/1512.07246">preprint paper</a> and corresponding prototype R package <a href="https://github.com/bwlewis/tcor">github.com/bwlewis/tcor</a>. Here is an example that walks through correlation of TCGA RNASeq gene expression data: <a href="https://github.com/bwlewis/tcor/blob/master/vignettes/brca.Rmd">https://github.com/bwlewis/tcor/blob/master/vignettes/brca.Rmd</a>.
 <li> A few folks asked how I install R on Linux for my own use. This is how I do it: <a href="r-on-linux.html">r-on-linux.html</a>.
 <li> Some "big data" genomics problems are easier than you might think. These R examples walk through PCA and overlap join problems involving genomic variant data from the 1000 Genomes Project: <a href="https://github.com/bwlewis/1000_genomes_examples">https://github.com/bwlewis/1000_genomes_examples</a>. I recently added some examples that show how to compute PCA across the whole genome here <a href="http://bwlewis.github.io/1000_genomes_examples/PCA_whole_genome.html">http://bwlewis.github.io/1000_genomes_examples/PCA_whole_genome.html</a>. For instance, using plain old R we can compute PCA across all genomic variants in the 1000 Genomes data on a single Amazon EC2 instance in only about 8 minutes!
+<li> I updated the <a href="https://cran.r-project.org/package=irlba">irlba</a> package for R (new version is 2.1.2). The new version includes a convenience 'prcomp'-like function for principal components, and a significant performance boost for most problems. I've got a web page about the method that includes referenes to vignettes and applications here: <a href="https://bwlewis.github.io/irlba/">https://bwlewis.github.io/irlba/</a>, and a comparison with the cool RSpectra package for R here: <a href="https://bwlewis.github.io/irlba/comparison.html">https://bwlewis.github.io/irlba/comparison.html</a>. Jim Baglama informs me that the Mathworks has finally adopted the irlba method for use in MATLAB's truncated SVD sovler, 'svds'. All I can say is, welcome to the present. (R has had this available in stable form for over 5 years,  I guess it’s hard for proprietary software companies to keep up with the times–they have to spend so much effort on marketing after all.)
 <li> I was honored to participate again in the 2016 NYR event/party/conference, <a href="http://www.rstats.nyc/">http://www.rstats.nyc/</a>, and saw many wonderful talks there. Here is a link to a video of my talk: <a href="https://youtu.be/PM7O6EGakKY">https://youtu.be/PM7O6EGakKY</a> and all the talks: <a href="http://www.rstats.nyc/2016">http://www.rstats.nyc/2016</a>.
-<li> 
-William A. Stein of SageMath fame posted a depressing talk on the lack of
-support for serious free and open mathematical software in academia: <a
-href="http://wstein.org/talks/2016-06-sage-bp/bp.pdf">http://wstein.org/talks/2016-06-sage-bp/bp.pdf</a>.
-It's almost impossible to overstate the importance of freely
-available, transparent, correct implementations of algorithms and the software
-applications that make these things usable.
-These applications are used to make decisions
-affecting all of us like analyzing clinical drug trials, figuring the impact of
-climate change, discovering disease pathways, and on and on. It may be that
-some proprietary black box system can solve certain problems really fast or
-exhibit some other advantage. But without high-quality, free open source
-software we have no easy way to gauge the quality of those black box solutions.
-That's why I'm so deeply involved with R and why I admire Python so much. I
-hope that the academic world and society more broadly understands how important
-this is.
-</p>
 <li> You should really be reading <a href="http://andrewgelman.com/">Andrew Gelman's blog</a>.
 <li> Geeks are the new jocks <a href="http://www.wsj.com/articles/a-data-scientist-dissects-the-2016-nfl-draft-1461793878">http://www.wsj.com/articles/a-data-scientist-dissects-the-2016-nfl-draft-1461793878</a>
 <li> <a href="http://rinfinance.com/">R/Finance</a> makes Chicago the place
 to be every May.
 As usual I advocate for the obvious, avoid complexity and keep things simple: <a href="r_finance_2016.html">r_finance_2016.html</a>. As you can see, I'm a big fan of <a href="https://github.com/wesm/feather">feather</a>.
-<li> I gave a talk at Kent state on cointegration and its implementation <a href="cointegration.html">http://illposed.net/cointegration.html</a>.
+<li> I gave a talk at Kent state on cointegration and its implementation <a href="http://illposed.net/cointegration.html">http://illposed.net/cointegration.html</a>.
 <li>
 Mike and I have been writing down our working notes on generalized linear
 models.  Still incomplete and a bit rough, but maybe interesting to somebody...
@@ -1111,20 +1096,20 @@ associated project <a
 href="https://github.com/bwlewis/GLM">https://github.com/bwlewis/GLM</a>.
 <li> A thoughtful talk by Douglas Adams (1998) <a href="http://ia800202.us.archive.org/9/items/biota2_audio/biota_adams.mp3">http://ia800202.us.archive.org/9/items/biota2_audio/biota_adams.mp3</a>, "The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be..."
 <li> I was invited to give a few short talks at Microsoft's R and Python day in which I urged data scientists to not get so hung up on languages and think more about literature. We also discussed the AzureML package for R; see
-<a href="http://r_and_python.html">r_and_python.html</a> and  <a href="http://azureml.html">azureml.html</a>.
+<a href="http://illposed.net/r_and_python.html">r_and_python.html</a> and  <a href="http://illposed.net/azureml.html">azureml.html</a>.
 <li> I added a new function for plotting interactive 3-d force directed graphs to the <a href="http://bwlewis.github.io/rthreejs/">threejs</a> package for R, also now on CRAN. See <a href="http://bwlewis.github.io/rthreejs/graphjs.html">http://bwlewis.github.io/rthreejs/graphjs.html</a> for some basic examples. Source code is available <a href="https://github.com/bwlewis/rthreejs">here</a>.
 <li> A few of my incidental R projects recently needed very fast data compression/decompression. R's gzip implementation is excellent overall. But I wanted a bit more speed, which led to this: <a href="https://github.com/bwlewis/lz4">https://github.com/bwlewis/lz4</a>. The lz4 method by Yann Collet is extremely fast at decompression, you can read more about it here: <a href="http://www.lz4.org">lz4.org</a>.
 <li> A new version 2.0.0 of the <a href="https://github.com/bwlewis/irlba">irlba</a> package for fast truncated SVD, PCA, and now partial symmetric eigenvalue decomposition is on <a href="https://cran.r-project.org/web/packages/irlba/index.html">CRAN</a>.
 <li> <a href="http://www.theatlantic.com/science/archive/2015/10/in-defense-of-thoreau/411457/">Jedediah Purdy</a> defends Thoreau in the Atlantic from the bitingly provacative article by <a href="http://www.newyorker.com/magazine/2015/10/19/pond-scum">Kathryn Schulz</a> in the New Yorker. Henry Thoreau is either a "genuine American weirdo" or narcissistic author of "cabin porn" or, perhaps, both. I really enjoyed reading these gems.
 
-<li> I gave a talk at the University of Rhode Island Friday, September 18th called "Math in the Time of Data." Slides: <a href="uri.html">http://illposed.net/uri.html</a>
-<li> I gave a talk Wednesday, September 16th at the Boston R meetup on thinking small about big data. Slides are here: <a href="boston_rug_sept_2015.html">boston_rug_sept_2015.html</a>.
+<li> I gave a talk at the University of Rhode Island Friday, September 18th called "Math in the Time of Data." Slides: <a href="http://illposed.net/uri.html">http://illposed.net/uri.html</a>
+<li> I gave a talk Wednesday, September 16th at the Boston R meetup on thinking small about big data. Slides are here: <a href="http://illposed.net/boston_rug_sept_2015.html">boston_rug_sept_2015.html</a>.
 <li> Fascinating data from the Department of Education: <a href="https://collegescorecard.ed.gov/data/">https://collegescorecard.ed.gov/data/</a>
 <li> A really cool negative result: <a href="http://dash.harvard.edu/bitstream/handle/1/3043415/imbens_bootstrap.pdf">http://dash.harvard.edu/bitstream/handle/1/3043415/imbens_bootstrap.pdf</a>
 <li> Three.js plot widgets for R (now on CRAN): <a href="https://bwlewis.github.io/rthreejs">https://bwlewis.github.io/rthreejs</a>.
-<li> The <a href="http://www.stat.wvu.edu/Interface2015/">Interface</a> conference was in Morgantown, WV this year. I gave a contrarian talk, criticizing some "big data" systems and examples out there and encouraging us to think carefully about solving problems before resorting to using those tools. Here are the slides: <a href="think_small.html">think_small.html</a>.
+<li> The <a href="http://www.stat.wvu.edu/Interface2015/">Interface</a> conference was in Morgantown, WV this year. I gave a contrarian talk, criticizing some "big data" systems and examples out there and encouraging us to think carefully about solving problems before resorting to using those tools. Here are the slides: <a href="http://illposed.net/think_small.html">think_small.html</a>.
 <li> I spoke about the many uses of the singular value decomposition in computational finance at the <a href="http://rinfinance.com/">seventh annual R in Finance Conference</a> in Chicago. Only the very coolest people attend this conference. The slides are here: <a href="http://illposed.net/rf2015.html">rf2015.html</a>.
-<li>I gave a talk at the <a href="http://rstats.nyc">NY R</a> conference on foraging and visualization. Here is a video of the talk: <a href="https://www.youtube.com/watch?v=OXYX1FVlbdI">https://www.youtube.com/watch?v=OXYX1FVlbdI</a>.
+<li>I gave a talk at the <a href="http://rstats.nyc">NY R</a> conference on foraging and visualization. Here is a video of the talk: <a href="https://www.youtube.com/watch?v=OXYX1FVlbdI">https://www.youtube.com/watch?v=OXYX1FVlbdI</a> and slides can be found here: <a href="http://illposed.net/nycr2015/">http://illposed.net/nycr2015/</a>
 
 <li> A cautionary note on missing value handling in correlation: <a href="http://bwlewis.github.io/covar/missing.html">http://bwlewis.github.io/covar/missing.html</a>
 
@@ -1244,14 +1229,28 @@ principal components analysis (PCA) on the Netflix data set
 
 </li>
 <li> My lightning talk on SciDB and R for the Boston R meetup on 22-Jan-2013: <a href="http://goo.gl/btioG">goo.gl/btioG</a>.
+<li>I gave a talk at JSM about R and websockets. Here it is:
+<a href="http://illposed.net/jsm2012.pdf">http://illposed.net/jsm2012.pdf</a>
+<br/>And, here is a nifty application of websockets and R in quant. finance:
+<a href="http://timelyportfolio.blogspot.com/2012/07/hi-r-and-axys-im-d3js-nice-to-meet-you.html">
+http://timelyportfolio.blogspot.com/2012/07/hi-r-and-axys-im-d3js-nice-to-meet-you.html</a>.
+Here is a silly cool "chat" script for R using websockets (many web clients can share
+a super basic R session):
+<a href="http://illposed.net/rchat.R">http://illposed.net/rchat.R</a>.
+<br /><br />Joe Cheng over at <a href="http://rstudio.org">RStudio</a> has taken over active development
+of the package.
+</li>
 <li>Slides about the R bigmemory, parallel linear algebra in R, and a preview of what I'm working on with R and SciDB from a recent talk at the Boston R Meetup:
-<a href="boston_r_meetup_2012.pdf">http://illposed.net/boston_r_meetup_2012.pdf</a>
+<a href="http://illposed.net/boston_r_meetup_2012.pdf">http://illposed.net/boston_r_meetup_2012.pdf</a>
 </li>
 <li>One new idea and one old idea that should be better known on the SVD and cointegration
 (from a recent talk at R/Finance 2012):
-<a href="Lewis_RFinance_2012.pdf">Lewis_RFinance_2012.pdf</a>.
+<a href="http://illposed.net/Lewis_RFinance_2012.pdf">Lewis_RFinance_2012.pdf</a>.
 <li>A data frame promise for R that very quickly extracts subsets directly from raw delimited text files:
-<a href="lazy.frame.html">lazy.frame.html</a>.
+<a href="http://illposed.net/lazy.frame.html">lazy.frame.html</a>.
+<li>
+A native HTML 5 Websocket library for R:
+<a href="http://illposed.net/websockets.html">http://illposed.net/websockets.html</a>
 <li>
 I discussed some methods other than Hadoop for analyzing large data with 
 the New York CTO club. My notes are available here:
@@ -1272,10 +1271,10 @@ require breaking the law.
 <li>Talk: "How good are Krylov methods for discrete ill-posed problems?," March 25--28 AMS meeting in Lexington, KY: <a href="http://www.ms.uky.edu/~corso/amsmaa2010/">http://www.ms.uky.edu/~corso/amsmaa2010/</a>.
 <br/>
 Here are some slides: 
-<a href="AMS_Lex_March2010-1.pdf">AMS_Lex_March2010-1.pdf</a>
+<a href="http://illposed.net/AMS_Lex_March2010-1.pdf">AMS_Lex_March2010-1.pdf</a>
 <br/></li>
 <li>
-<a href="pvshm.html">pvshm.html</a>: A Linux filesystem that
+<a href="http://illposed.net/pvshm.html">pvshm.html</a>: A Linux filesystem that
 provides a memory mapping overlay for PVFS2 or other file systems lacking
 memory mapping capability.
 <br/></li>
@@ -1283,7 +1282,7 @@ memory mapping capability.
 <a href="http://github.com/bwlewis/fls">http://github.com/bwlewis/fls</a>, an implementation of Kalaba-Tesfatsion flexible least squares method for R.
 </li>
 <li>
-<a href="R4P.html">R4P</a>, an R library for Processing.
+<a href="http://illposed.net/R4P.html">R4P</a>, an R library for Processing.
 <br/></li>
 <li>
 <a href="http://github.org/bwlewis/ratlab">Ratlab</a>, tools for foolin' with R and Octave (or Matlab) together.
