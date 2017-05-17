@@ -1074,6 +1074,7 @@ Send electronic mail to me at:
 <div style="clear: both;"></div>
 
 <ul>
+<li> A new version 2.2.1 of the <a href="https://github.com/bwlewis/irlba">irlba</a> package for fast truncated SVD, PCA, and symmetric eigenvalue decomposition is on <a href="https://cran.r-project.org/package=irlba">CRAN</a>. The new version includes improved convergence criteria for tricky problems and the return of a  prototype method for finding smallest singular values.
 <li> Yale graduate student teachers are protesting unfair labor practices with a hunger strike: <a href="http://yaledailynews.com/blog/2017/05/10/two-weeks-into-local-33-fast-hundreds-protest-on-cross-campus/">http://yaledailynews.com/blog/2017/05/10/two-weeks-into-local-33-fast-hundreds-protest-on-cross-campus/</a>.
 <li> Michael Elad wrote an interesting editorial on deep learning in SIAM News: <a href="https://sinews.siam.org/Details-Page/deep-deep-trouble-4">https://sinews.siam.org/Details-Page/deep-deep-trouble-4</a>.
 <li> Some more notes on PCA over full-genome variants from the NIH 1000 Genomes Project, and on computing in parallel with R:
@@ -1113,7 +1114,6 @@ href="https://github.com/bwlewis/GLM">https://github.com/bwlewis/GLM</a>.
 <a href="http://illposed.net/r_and_python.html">r_and_python.html</a> and  <a href="http://illposed.net/azureml.html">azureml.html</a>.
 <li> I added a new function for plotting interactive 3-d force directed graphs to the <a href="http://bwlewis.github.io/rthreejs/">threejs</a> package for R, also now on CRAN. See <a href="http://bwlewis.github.io/rthreejs/graphjs.html">http://bwlewis.github.io/rthreejs/graphjs.html</a> for some basic examples. Source code is available <a href="https://github.com/bwlewis/rthreejs">here</a>.
 <li> A few of my incidental R projects recently needed very fast data compression/decompression. R's gzip implementation is excellent overall. But I wanted a bit more speed, which led to this: <a href="https://github.com/bwlewis/lz4">https://github.com/bwlewis/lz4</a>. The lz4 method by Yann Collet is extremely fast at decompression, you can read more about it here: <a href="http://www.lz4.org">lz4.org</a>.
-<li> A new version 2.0.0 of the <a href="https://github.com/bwlewis/irlba">irlba</a> package for fast truncated SVD, PCA, and now partial symmetric eigenvalue decomposition is on <a href="https://cran.r-project.org/web/packages/irlba/index.html">CRAN</a>.
 <li> <a href="http://www.theatlantic.com/science/archive/2015/10/in-defense-of-thoreau/411457/">Jedediah Purdy</a> defends Thoreau in the Atlantic from the bitingly provacative article by <a href="http://www.newyorker.com/magazine/2015/10/19/pond-scum">Kathryn Schulz</a> in the New Yorker. Henry Thoreau is either a "genuine American weirdo" or narcissistic author of "cabin porn" or, perhaps, both. I really enjoyed reading these gems.
 
 <li> I gave a talk at the University of Rhode Island Friday, September 18th called "Math in the Time of Data." Slides: <a href="http://illposed.net/uri.html">http://illposed.net/uri.html</a>
@@ -1209,10 +1209,6 @@ restricted right now to real-valued matrices and is still under active
 development. Mike Kane presents
 our work at the SciPy Conference next week in Austin June 24--28 (2013).
 
-<li> I get a lot of questions about using the fast truncated SVD 
-<a href="http://cran.r-project.org/web/packages/irlba/index.html">irlba</a> package, especially for large problems.
-So, I've started a page of miscellaneous tips here:
-<a href="http://illposed.net/irlb.html">irlba</a>.
 
 <li>
 Whit Armstrong and I ran a seminar on high performance computing with R at the 
@@ -1230,16 +1226,6 @@ Here is the vignette documentation:
 <a href="http://illposed.net/doRedis.pdf">doRedis.pdf</a>
 <br/>
 
-<li>
-The <a href="http://cran.r-project.org/web/packages/irlba/index.html">irlba</a> package for
-R provides a state of the art fast partial singular value decomposition. It's
-suitable for very large scale problems and supports sparse and dense matrices.
-<p>
-To give you an idea how fast it is, one can compute a five-dimensional 
-principal components analysis (PCA) on the Netflix data set 
-(480,189 user IDs and 17,770 movies) in a few minutes on a dual-core notebook
-(using R's sparse <i>Matrix</i> package).
-</p>
 
 </li>
 <li> My lightning talk on SciDB and R for the Boston R meetup on 22-Jan-2013: <a href="http://goo.gl/btioG">goo.gl/btioG</a>.
