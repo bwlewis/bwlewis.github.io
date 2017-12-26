@@ -1074,13 +1074,31 @@ Send electronic mail to me at:
 <div style="clear: both;"></div>
 
 <ul>
-<li> Lots of improvements and new features brewing in the <a href="https://bwlewis.github.io/rthreejs">threejs</a> package for R, including <a href="http://bwlewis.github.io/rthreejs/crosstalk.html">crosstalk support</a>! This will hopefully make it to CRAN soon...
-<li> You've probably already seen this on Hacker News, but I'm a fan of Chris Stucchio so here it is again: <a href="https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html">Don't use Hadoop - your data isn't that big</a>. I would only add that "Hadoop" can be replaced with <i>many</i> so-called "big data" technologies. Also see a superb note by Frank McSherry, Michael Isard, and Derek Murray <a href="http://www.frankmcsherry.org/graph/scalability/cost/2015/01/15/COST.html">Scalability! But at what COST?</a>, and some notes in a similar spirit on a few basic problems in genomics here: <a href="https://github.com/bwlewis/1000_genomes_examples">https://github.com/bwlewis/1000_genomes_examples</a>. The genomics notes show that R easily out-peformns high performance database systems for range joins and that it's easier to compute extremely large principal components-like analyses than one might think.
+<li> Here is a simple new containerized way to run Tomas Kalibera's indispensable rchk tool for R packages with compiled code, based on Singularity: <a href="https://github.com/bwlewis/rchk/blob/master/image/README_SINGULARITY.md.">https://github.com/bwlewis/rchk/blob/master/image/README_SINGULARITY.md</a>.
+<li> Julia Silge wrote very cool notes about computationally efficient word vector computation, <a href="https://juliasilge.com/blog/tidy-word-vectors/">https://juliasilge.com/blog/tidy-word-vectors/</a>, inspired by Chris Moody at Stich Fix <a href="http://multithreaded.stitchfix.com/blog/2017/10/18/stop-using-word2vec/">http://multithreaded.stitchfix.com/blog/2017/10/18/stop-using-word2vec/</a>. I love this approach!
+<li> If you're interested in a great reference on <i>practical</i> parallel computing, I recommend Norm Matloff's book: <a href="https://www.crcpress.com/Parallel-Computing-for-Data-Science-With-Examples-in-R-C-and-CUDA/Matloff/p/book/9781466587014">Parallel Computing for Data Science with Examples in R C++ and CUDA</a>.
+<li> A thoughtful talk that I enjoyed on distributed ledgers/blockchains by Vili Lehdonvirta: <a href="https://youtu.be/eNrzE_UfkTw">https://youtu.be/eNrzE_UfkTw</a>.
+<li> A short note on regularization, correlation, and network analysis using stock prices (I'm still working on this a bit): <a href="https://bwlewis.github.io/correlation-regularization/">https://bwlewis.github.io/correlation-regularization/</a> (uses the new threejs package below).
+<li> A substantially new version of the R <a href="https://bwlewis.github.io/rthreejs">threejs</a> package, 0.3.1, is now on CRAN! The new version is focused on enhanced visualization of igraph objects (networks), and includes support for graph animation, crosstalk widgets, and much more.
 <li>
 An updated, fun interactive example of some eigenvalue inclusion methods:
 <a href="http://bwlewis.github.io/cassini/">http://bwlewis.github.io/cassini/</a> (an update of old work with Richard Varga).
 <li> I gave a talk on projection methods at R/Finance in Chicago in May (of course!): <a href="https://bwlewis.github.io/rfinance-2017/">https://bwlewis.github.io/rfinance-2017/</a>. Some of those ideas are still developing...we'll be working on them over the summer.
 <li> A new version 2.2.1 of the <a href="https://github.com/bwlewis/irlba">irlba</a> package for fast truncated SVD, PCA, and symmetric eigenvalue decomposition is on <a href="https://cran.r-project.org/package=irlba">CRAN</a>. The new version includes improved convergence criteria for tricky problems and the return of a  prototype method for finding smallest singular values.
+<li> Michael Elad wrote an interesting editorial on deep learning in SIAM News: <a href="https://sinews.siam.org/Details-Page/deep-deep-trouble-4">https://sinews.siam.org/Details-Page/deep-deep-trouble-4</a>.
+<li> Some more notes on PCA over full-genome variants from the NIH 1000 Genomes Project, and on computing in parallel with R:
+<br/>- Brief overview 
+<a href="http://bwlewis.github.io/1000_genomes_examples/PCA_overview.html">http://bwlewis.github.io/1000_genomes_examples/PCA_overview.html</a>
+<br/>- Notes on the parallel computation
+<a href="http://bwlewis.github.io/1000_genomes_examples/notes.html">http://bwlewis.github.io/1000_genomes_examples/notes.html</a>
+<li> Some notes on R and Singularity, a lightweight container system well-suited to HPC: <a href="https://bwlewis.github.io/r-and-singularity/">https://bwlewis.github.io/r-and-singularity/</a>.
+<li> I'll be rambling on about <a href="http://bwlewis.github.io/rthreejs/">threejs</a> at the NYR conference <a href="http://www.rstats.nyc/">www.rstats.nyc</a> April 21-22.
+<li> A substantially revised new version of the <a href="https://github.com/bwlewis/rthreejs">threejs</a> package
+is almost ready, with a big focus on improving graph visualization.
+See <a href="https://bwlewis.github.io/rthreejs/">https://bwlewis.github.io/rthreejs/</a> for a few examples.
+<li> See you at <a href="https://www.rstudio.com/conference/">rstudio::conf</a> in Orlando in January!
+<li> A celebrated recent paper on the fallacy of the hot hand fallacy worth reading! <a href="http://dx.doi.org/10.2139/ssrn.2627354">http://dx.doi.org/10.2139/ssrn.2627354</a> Miller, Joshua Benjamin and Sanjurjo, Adam, Surprised by the Gambler's and Hot Hand Fallacies? A Truth in the Law of Small Numbers (November 15, 2016). IGIER Working Paper No. 552.
+<li> Germany is putting <a href="https://gowers.wordpress.com/2016/11/29/time-for-elsexit/">Tim Gower's arguments</a> into practice and effectively boycotting Elsevier journals next year, see <a href="https://www.sub.uni-goettingen.de/en/news/details/voraussichtlich-keine-volltexte-von-zeitschriften-des-elsevier-verlags-ab-dem-112017/">www.sub.uni-goettingen.de</a>. Elsevier is a particularly dodgy publisher with questionable ethics. Fortunately for me there are exceptionally high-quality free and open access journals like <a href="http://etna.mcs.kent.edu/">Electronic Transactions on Numerical Analysis</a>.
 <li> From the <a href="http://www.391.org/manifestos/1920-dada-manifesto-feeble-love-bitter-love-tristan-tzara.html">dada manifesto</a>
 <pre>
 TO MAKE A DADAIST POEM
@@ -1096,20 +1114,6 @@ Copy conscientiously in the order in which they left the bag.
 Them poem will resemble you.
 And there you are - an infinitely original author of charming sensibility, even though unappreciated by the vulgar herd.
 </pre>
-<li> Michael Elad wrote an interesting editorial on deep learning in SIAM News: <a href="https://sinews.siam.org/Details-Page/deep-deep-trouble-4">https://sinews.siam.org/Details-Page/deep-deep-trouble-4</a>.
-<li> Some more notes on PCA over full-genome variants from the NIH 1000 Genomes Project, and on computing in parallel with R:
-<br/>- Brief overview 
-<a href="http://bwlewis.github.io/1000_genomes_examples/PCA_overview.html">http://bwlewis.github.io/1000_genomes_examples/PCA_overview.html</a>
-<br/>- Notes on the parallel computation
-<a href="http://bwlewis.github.io/1000_genomes_examples/notes.html">http://bwlewis.github.io/1000_genomes_examples/notes.html</a>
-<li> Some notes on R and Singularity, a lightweight container system well-suited to HPC: <a href="https://bwlewis.github.io/r-and-singularity/">https://bwlewis.github.io/r-and-singularity/</a>.
-<li> I'll be rambling on about <a href="http://bwlewis.github.io/rthreejs/">threejs</a> at the NYR conference <a href="http://www.rstats.nyc/">www.rstats.nyc</a> April 21-22.
-<li> A substantially revised new version of the <a href="https://github.com/bwlewis/rthreejs">threejs</a> package
-is almost ready, with a big focus on improving graph visualization.
-See <a href="https://bwlewis.github.io/rthreejs/">https://bwlewis.github.io/rthreejs/</a> for a few examples.
-<li> See you at <a href="https://www.rstudio.com/conference/">rstudio::conf</a> in Orlando in January!
-<li> A celebrated recent paper on the fallacy of the hot hand fallacy worth reading! <a href="http://dx.doi.org/10.2139/ssrn.2627354">http://dx.doi.org/10.2139/ssrn.2627354</a> Miller, Joshua Benjamin and Sanjurjo, Adam, Surprised by the Gambler's and Hot Hand Fallacies? A Truth in the Law of Small Numbers (November 15, 2016). IGIER Working Paper No. 552.
-<li> Germany is putting <a href="https://gowers.wordpress.com/2016/11/29/time-for-elsexit/">Tim Gower's arguments</a> into practice and effectively boycotting Elsevier journals next year, see <a href="https://www.sub.uni-goettingen.de/en/news/details/voraussichtlich-keine-volltexte-von-zeitschriften-des-elsevier-verlags-ab-dem-112017/">www.sub.uni-goettingen.de</a>. Elsevier is a particularly dodgy publisher with questionable ethics. Fortunately for me there are exceptionally high-quality free and open access journals like <a href="http://etna.mcs.kent.edu/">Electronic Transactions on Numerical Analysis</a>.
 <li> After recently upgrading my cheap laptop to Ubuntu 16.04 I discovered that my old network manager scheme for randomizing hardware MAC address broke. I saw that the latest build of network manager introduced a new scheme for doing this, but was unable to get that to work in Ubuntu (see for instance this thread <a href="https://bbs.archlinux.org/viewtopic.php?id=213855">https://bbs.archlinux.org/viewtopic.php?id=213855</a>). Frustrated with making such a simple thing so difficult, I stripped out all that junk from my operating system and now use this trivial script to manually manage my wifi network interface: <a href="wifi">wifi</a>. The script doesn't cover all connection cases, but less common connections can usually be manually configured without much problem.
 <li> Friends and I are working on some new methods for fast and efficient thresholded correlation, suitable for very large-scale problems: <a href="http://arxiv.org/abs/1512.07246">preprint paper</a> and corresponding prototype R package <a href="https://github.com/bwlewis/tcor">github.com/bwlewis/tcor</a>. Here is an example that walks through correlation of TCGA RNASeq gene expression data: <a href="https://github.com/bwlewis/tcor/blob/master/vignettes/brca.Rmd">https://github.com/bwlewis/tcor/blob/master/vignettes/brca.Rmd</a>.
 <li> A few folks asked how I install R on Linux for my own use. This is how I do it: <a href="r-on-linux.html">r-on-linux.html</a>.
@@ -1148,8 +1152,6 @@ href="https://github.com/bwlewis/GLM">https://github.com/bwlewis/GLM</a>.
 <li> A cautionary note on missing value handling in correlation: <a href="http://bwlewis.github.io/covar/missing.html">http://bwlewis.github.io/covar/missing.html</a>
 
 <li> I highly recommend this article by Frank McSherry summarizing his work with Michael Isard, and Derek Murray: <a href="http://www.frankmcsherry.org/graph/scalability/cost/2015/01/15/COST.html">Scalability! But at what COST?</a>. Using some moderately large graph problems as examples, they advocate thinking carefully about problems and their solution methods (seems obvious, right?).
-<li> Here is a fun example of covariance shrinkage and graph clustering of stock market returns that uses
-htmlwidgets to visualize the output: <a href="https://bwlewis.github.io/covariance-shrinkage/">https://bwlewis.github.io/covariance-shrinkage/</a>
 
 
 <li> If you missed the Bay Area meetup, I'm giving a longer talk on  <a href="http://www.htmlwidgets.org/">htmlwidgets</a>  at the Cleveland R meetup on Wednesday, February 25th (2015). See <a href="http://www.meetup.com/Cleveland-UseR-Group/events/220140560/">http://www.meetup.com/Cleveland-UseR-Group/events/220140560/</a> for more info. Here are the <a href="http://illposed.net/widgets.html">slides</a> from that talk.
