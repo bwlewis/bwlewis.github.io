@@ -40,49 +40,29 @@ blockquote.bq {
   padding-left: 15px;
   border-left: 1px solid #ccc;
 } 
-div.a {
-  animation-duration: 60s;
-  animation-name: disappear;
-  animation-iteration-count: infinite;
+@keyframes aa {
+  0% { color: transparent; }
+  32% { color: transparent; }
+  33% { color: green; }
+  34% { color: green; }
+  65% { color: green; }
+  66% { color: transparent; }
+  100% { color: transparent; }
 }
-div.b {
-  animation-duration: 60s;
-  animation-name: appear;
-  animation-iteration-count: infinite;
+@keyframes ab {
+  0% { color: green; }
+  1% { color: green; }
+  32% { color: green; }
+  33% { color: transparent; }
+  100% { color: transparent; }
 }
-@keyframes appear {
-  0% {
-    color: transparent;
-  }
-  1% {
-    color: transparent;
-  }
-  50% {
-    color: transparent;
-  }
-  51% {
-    color: green;
-  }
-  100% {
-    color: green;
-  }
-}
-@keyframes disappear {
-  0% {
-    color: green;
-  }
-  1% {
-    color: green;
-  }
-  50% {
-    color: green;
-  }
-  51% {
-    color: transparent;
-  }
-  100% {
-    color: transparent;
-  }
+@keyframes ac {
+  0% { color: transparent; }
+  1% { color: transparent; }
+  65% { color: transparent; }
+  66% { color: green; }
+  67% { color: green; }
+  100% { color: green; }
 }
 </style>
 </head>
@@ -94,7 +74,7 @@ div.b {
 Bryan W. Lewis
 <p>
 I prefer to forage, and I enjoy many <a
-href="https://www.wvmushroomclub.net/annual-foray?mc_cid=ed1120739b&mc_eid=be078cdd2d">mushrooms</a>, <a
+href="https://www.wvmushroomclub.net/">mushrooms</a>, <a
 href="https://seattle.bibliocommons.com/item/show/2731835030_stalking_the_wild_asparagus">other</a> wild foods,
 and living <a
 href="http://www.gutenberg.org/files/205/205-h/205-h.htm">simply</a>.
@@ -106,41 +86,55 @@ for computation and visualization.
 Send electronic mail to me at: 
 <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x62;&#x6c;&#x65;&#x77;&#x69;&#115;&#x40;&#x69;&#x6c;&#108;&#112;&#x6f;&#x73;&#101;&#x64;&#x2e;&#110;&#101;&#x74;">&#x62;&#x6c;&#x65;&#x77;&#x69;&#115;&#x40;&#x69;&#x6c;&#108;&#112;&#x6f;&#x73;&#101;&#x64;&#x2e;&#110;&#101;&#x74;</a>.
 </p>
-<div class="a">
+<div style="animation: aa 40s infinite;">
 <blockquote>
 <i> There are two kinds of people in the world, those that believe in dimensionality reduction, and those that believe there are 7 billion kinds of people in the world.</i>
 <p>
 &#8212;told to me by Jenny Bryan
 </blockquote>
 </div>
-<div class="b" style="margin-top: -100px;">
+<div style="margin-top: -100px; animation: ab 40s infinite;">
 <blockquote>
 <i>de todos ha de haber en el mundo</i>
 <p>
 &#8212;Miguel de Cervantes
 </blockquote>
 </div>
+<div style="margin-top: -100px; animation: ac 40s infinite;">
+<blockquote>
+<i>There's lots of room left in Hilbert space!</i>
+<p>
+&#8212;Saunders Maclane
+</blockquote>
+</div>
 
-<p> Fastr, the GraalVM R Runtime and a silly performance example. <a href="http://illposed.net/fastr_thoughts.html">fastr_thoughts.html</a>.
+<hr/>
+
+<p> <a href="./early_july_garrett_county_mushrooms.html">Early July Garrett county Maryland mushrooms</a>
+<p> This website is now (July, 2021) hosted on <a href="https://sr.ht">Sourcehut</a>. It doesn't use cookies or JavaScript (except in linked pages where required).
+<p> <a href="./fungi.html">Fungi (and slime molds) in the news</a>
+<p> <a href="./brass_tacks.html">R data.table brass tacks (the pointy part)</a>
+<p> <a href="https://bwlewis.github.io/duckdb_and_r/last/declarative.html">Declarative, Schmerative!</a>
+<p> <a href="https://github.com/bwlewis/duckdb_and_r">Thoughts on DuckDB and R</a>
+<p> Our book, <a href="https://www.comp-approach.com/">A Computational Approach to Statistical Learning</a>, is out!
+<p> Denis Rystsov wrote this remarkable paper more than 3 years ago: <a href="https://arxiv.org/abs/1802.07000">CASPaxos: Replicated State Machines without logs</a>. I was astounded by it then and still am.
+<p> Here is an updated, fun interactive example of some eigenvalue inclusion methods that Richard Varga, Alan Krautstengl, and I worked on for ETNA almost 25 years ago(!) <a href="https://bwlewis.github.io/cassini/">https://bwlewis.github.io/cassini/</a>. I hoped that ETNA would end up with many interactive examples, perhaps it still will some day.
+<p> Fastr, the GraalVM R Runtime and a silly performance example. <a href="https://illposed.net/fastr_thoughts.html">fastr_thoughts.html</a>.
 <p> <a href="https://bwlewis.github.io/about_that_study/arshad_et_al">A lament about unconstructive criticism of a widely discussed study that appeared last year.</a>
-<p> <a href="http://illposed.net/springtime_stump_huntin.html"> On springtime morel foraging in Ohio </a>
+<p> <a href="https://illposed.net/springtime_stump_huntin.html"> On springtime morel foraging in Ohio </a>
 <p> Here is a talk I gave about parallel computing with R
 at the RStudio 2020 conference in honor of my friend
 Steve Weston: <a href="https://resources.rstudio.com/rstudio-conf-2020/parallel-computing-with-r-using-foreach-future-and-other-packages-bryan-lewis">https://resources.rstudio.com/rstudio-conf-2020/parallel-computing-with-r-using-foreach-future-and-other-packages-bryan-lewis</a>.
-<p> <a href="./fungi.html">Fungi in the news</a>
 <p> <a href="./magrittr.html">Thoughts on magrittr pipes</a> (a very R-language specific note).
-<p> Our book is out! <a href="https://www.crcpress.com/A-Computational-Approach-to-Statistical-Learning/Arnold-Kane-Lewis/p/book/9781138046375">https://www.crcpress.com/A-Computational-Approach-to-Statistical-Learning/Arnold-Kane-Lewis/p/book/9781138046375</a>.
 <p> Hao Huang proved the sensitivity conjecture with nice, simple tools from matrix theory: <a href="https://arxiv.org/abs/1907.00847">https://arxiv.org/abs/1907.00847</a>.
 <p> A thought-provoking recent paper on progress by neural network recommendation systems, or lack thereof, by Dacrema, Cremonesi, and Jannach: <a href="https://arxiv.org/pdf/1907.06902.pdf">https://arxiv.org/pdf/1907.06902.pdf</a>. It's so full of great observations I could quote it endlessly here, but you should just read it!
+<p> <a href="http://illposed.net/sr2.xhtml">Model SR2 SVG Slide Rule</a>, an SVG-based slide rule that can be scripted with Javascript.
 <p> I often read horrible stories about academic publishers like this recent one in the LA times: <a href="https://www.latimes.com/business/hiltzik/la-fi-uc-elsevier-20190711-story.html">https://www.latimes.com/business/hiltzik/la-fi-uc-elsevier-20190711-story.html</a>. Look, if you're a researcher publishing research, please first consider submitting your work to a free open-access journal. There are plenty of very high-quality free and open peer-reviewed journals in many fields today. For instance in numerical analysis consider ETNA (<a href="http://etna.ricam.oeaw.ac.at/">http://etna.ricam.oeaw.ac.at/</a>). Or, if you're working on R-related projects consider the R Journal (<a href="https://journal.r-project.org/">https://journal.r-project.org/</a>). If that doesn't work out for you, then consider submitting to open-access friendly publishers (such publishers exist!). One more thing, if you review for journals as I do, think hard about supporting companies like Elsevier with your valuable free labor!
-<p> <a href="./early_july_garrett_county_mushrooms.html">Early July Garrett county Maryland mushrooms</a>
 <p> A real whopper of a bug in C interfaces to core Fortran libraries like BLAS and LAPACK from Tomas Kalibera: <a href="https://developer.r-project.org/Blog/public/2019/05/15/gfortran-issues-with-lapack/index.html">https://developer.r-project.org/Blog/public/2019/05/15/gfortran-issues-with-lapack/index.html</a>
 <p> A silly note on virtual mushroom foraging with R: <a href=" https://rviews.rstudio.com/2019/05/13/virtual-morel-foraging-with-r/"> https://rviews.rstudio.com/2019/05/13/virtual-morel-foraging-with-r/</a>  (it's really a primer on using RSelenium to mine image data from the web).
 <p>Electronic Transactions on Numerical Analysis is a pioneering free, open, peer-reviewed electronic mathematics journal. Come celebrate its 25th birthday in Cagliari: <a href="http://bugs.unica.it/ETNA25/">http://bugs.unica.it/ETNA25/</a>. See you there!
-<p> Here is an updated, fun interactive example of some eigenvalue inclusion methods that Richard Varga, Alan Krautstengl, and I worked on for ETNA almost 25 years ago(!) <a href="http://bwlewis.github.io/cassini/">http://bwlewis.github.io/cassini/</a>. I once thought that ETNA would end up with many interactive examples...
 <p> Version 2.3.3 of the irlba package (a bug fix release) is available, see <a href="https://cran.r-project.org/package=irlba">https://cran.r-project.org/package=irlba</a> and source code repository here: <a href="https://github.com/bwlewis/irlba">https://github.com/bwlewis/irlba</a>. Thanks especially are due to Aaron Lun at the CRUK Cambridge Institute (<a href="https://github.com/LTLA">https://github.com/LTLA</a>) for his contributions, and to the many users helping to find problems in the software. I'm working actively on some new algorithms for improving performance when the singular values are clustered and for some other things. We plan to post a vignette on the future direction of the package on GitHub soon.
-<p> Here are some old notes (from late 2017) on an example about fraud detection using a neural network autoencoder, from the RStudioblog originally, for your interest: <a href="http://illposed.net/autoencoder.html">autoencoder.html</a>.
-<p> I've been modeling application performance for Atrio. Here is a high-level description of that work if you're interested...  <a href="atrio.html">atrio.html</a>
+<p> Here are some old notes (from late 2017) on an example about fraud detection using a neural network autoencoder, from the RStudioblog originally, for your interest: <a href="https://illposed.net/autoencoder.html">autoencoder.html</a>.
 <p> A simple template for simple and basic HTML slide presentations <a href="https://github.com/bwlewis/slides">https://github.com/bwlewis/slides</a>.
 <p> Manny Salzman's wondrous trip <a href="https://www.coloradoindependent.com/171325/manny-salzmans-long-strange-and-wondrous-trip">https://www.coloradoindependent.com/171325/manny-salzmans-long-strange-and-wondrous-trip</a>. Here is a photo of Manny and Joanne (and Laura Wilson in the netted stinkhorn disguise and me, as some kind of clavaria species) in Telluride: <a href="./manny.jpg">manny.jpg</a>. And I just found this great picture of Gary and Manny from Telluride in 2012: <a href="./gary_manny.jpg">Gary & Manny</a>.
 <p> The <a href="https://ohiomushroomsociety.wordpress.com/">Ohio Mushroom Society</a> just finished a great summer foray in the Zaleski Forest in the Appalachian foothills of Ohio. Despite dry conditions, a lot of interesting species were found including <a href="https://www.nrs.fs.fed.us/pubs/jrnl/2009/nrs_2009_ortiz-santana_003.pdf">Boletus Roodyi</a> and many other interesting Boletes and an unusual chanterelle with a slight purplish color on its cap that looks kind of like cantharellus amethysteus. John Plischke III gave a hilarious and informative talk on foraging boletes, something like "Mycologists in cars foraging boletes." He and Laura Wilson also prepared a possibly unclassified Tuber (truffle) species for DNA sequencing and entry into the <a href="http://mycoflora.org/">http://mycoflora.org/</a> project. And the famous Walt Sturgeon presided as chief mycologist and identifier. The OMS main fall foray will be in Hiram, Ohio  on the weekend of October 6th.
@@ -199,7 +193,7 @@ href="https://github.com/bwlewis/GLM">https://github.com/bwlewis/GLM</a>.
 <p> I highly recommend this article by Frank McSherry summarizing his work with Michael Isard, and Derek Murray: <a href="http://www.frankmcsherry.org/graph/scalability/cost/2015/01/15/COST.html">Scalability! But at what COST?</a>. Using some moderately large graph problems as examples, they advocate thinking carefully about problems and their solution methods (seems obvious, right?).
 
 
-<p> If you missed the Bay Area meetup, I'm giving a longer talk on  <a href="http://www.htmlwidgets.org/">htmlwidgets</a>  at the Cleveland R meetup on Wednesday, February 25th (2015). See <a href="http://www.meetup.com/Cleveland-UseR-Group/events/220140560/">http://www.meetup.com/Cleveland-UseR-Group/events/220140560/</a> for more info. Here are the <a href="http://illposed.net/widgets.html">slides</a> from that talk.
+<p> If you missed the Bay Area meetup, I'm giving a longer talk on  <a href="http://www.htmlwidgets.org/">htmlwidgets</a>  at the Cleveland R meetup on Wednesday, February 25th (2015). See <a href="http://www.meetup.com/Cleveland-UseR-Group/events/220140560/">http://www.meetup.com/Cleveland-UseR-Group/events/220140560/</a> for more info.
 <p> I'm giving a short talk tonight (27-Jan-2015) in San Jose at the BARUG on <a href="http://www.htmlwidgets.org/">htmlwidgets</a>. The crazy amazing line-up of speakers tonight includes Mike Kane, Dirk Eddelbuettel, and Gabe Becker. Not to be missed!!!
 
 <p> I've been learning about clustering methods recently. Here is a link
@@ -227,9 +221,6 @@ by a relevance network graph.
 
 <p> I gave a talk with Jake VanderPlas about SciDB at PyData 2013 NYC. Here is a link to a Wakari notebook: <a href="http://goo.gl/ovGaHS">http://goo.gl/ovGaHS</a>
 
-<p>
-<a href="http://illposed.net/sr2.xhtml">Model SR2 SVG Slide Rule</a>, an SVG-based slide rule that can be scripted with Javascript.
-<br/>
 
 <p>
 The Redis client for R was recently updated! R package here on CRAN:
@@ -273,23 +264,14 @@ our work at the SciPy Conference next week in Austin June 24--28 (2013).
 <p>
 Whit Armstrong and I ran a seminar on high performance computing with R at the 
 <a href="http://www.rinfinance.com/">R/Finance</a> conference  in May.
-We emphasized elastic computing using 0MQ and Redis with R,
-and a bit of parallel linear algebra with SciDB. Here
-are the slides we used:
+We emphasized elastic computing using 0MQ and Redis with R.
+Here are the slides we used:
 <a href="http://illposed.net/elastic-r-redis.pdf">elastic-r-redis.pdf</a>.
 <a href="http://illposed.net/0MQ.distributed.computing.pdf">0MQ.distributed.computing.pdf</a>.
-<a href="http://illposed.net/SciDBR-breif.pdf">SciDBR-brief.pdf</a>.
-
-<p>
-<a href="http://illposed.net/doRedis.html">doRedis.html</a>, a parallel back end for the R language that uses Redis and foreach. 
-Here is the vignette documentation:
-<a href="http://illposed.net/doRedis.pdf">doRedis.pdf</a>
-<br/>
-
 
 
 <p> My lightning talk on SciDB and R for the Boston R meetup on 22-Jan-2013: <a href="http://goo.gl/btioG">goo.gl/btioG</a>.
-<p>I gave a talk at JSM about R and websockets. Here it is:
+<p>I gave a talk at JSM about R and websockets (this is the session in which Shiny was introduced to the world). Here it is:
 <a href="http://illposed.net/jsm2012.pdf">http://illposed.net/jsm2012.pdf</a>
 <br/>And, here is a nifty application of websockets and R in quant. finance:
 <a href="http://timelyportfolio.blogspot.com/2012/07/hi-r-and-axys-im-d3js-nice-to-meet-you.html">
@@ -346,5 +328,6 @@ Here are some slides:
 <a href="http://etna.math.kent.edu/vol.30.2008/pp128-143.dir/zeros/index.html">http://etna.math.kent.edu/vol.30.2008/pp128-143.dir/zeros/index.html</a> A newer Java applet illustrating the dynamical motion of the zeros of the partial sums of the exponential function (from work with Richard Varga and Amos Carpenter).
 
 </div>
+<hr/>
 </body>
 </html>
